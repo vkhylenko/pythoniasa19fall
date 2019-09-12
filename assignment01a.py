@@ -6,6 +6,50 @@ Update the Python script below to make it more compact and readable; use at leas
 For those who are already familiar with Python – write the best code you can to conform to the Zen of Python.
 
 """
+last = ["That kept the cock that crow'd in the morn,",
+        "That waked the priest all shaven and shorn,",
+        "That married the man all tatter'd and torn,",
+        "That kissed the maiden all forlorn,",
+        "That milk'd the cow with the crumpled horn,",
+        "That tossed the dog,",
+        "That worried the cat,",
+        "That killed the rat,",
+        "That ate the malt",
+        "That lay in the house that Jack built."]
+
+
+k = -1
+
+def list():
+       global k
+       b = last[len(last)-k-1: len(last)]
+       print('\n'.join(b))
+       k += 1
+
+
+
+print("This is the house that Jack built.")
+list()
+print("This is the malt")
+list()
+print("\nThis is the rat,")
+list()
+print("\nThis is the cat,")
+list()
+print("\nThis is the dog,")
+list()
+print("\nThis is the cow with the crumpled horn,")
+list()
+print("\nThis is the maiden all forlorn")
+list()
+print("\nThis is the man all tatter'd and torn,")
+list()
+print("\nThis is the priest all shaven and shorn,")
+list()
+print("\nThis is the cock that crow'd in the morn, ")
+list()
+print("\nThis is the farmer sowing his corn, ")
+
 
 poem = '''
 This is the house that Jack built.
@@ -86,4 +130,4 @@ That ate the malt
 That lay in the house that Jack built.
 '''
 
-print(poem)
+#print(poem)
