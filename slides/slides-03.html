@@ -172,12 +172,12 @@
 
         ---
 
-        # 34 Keywords (Python 3.7.4)
+        # 35 Keywords (Python 3.7.4)
 
 
         .pull-left[
         - True, False, None
-        - and, in, is, not
+        - and, or, not, is, in
         - as
         - assert
         - async, await
@@ -244,9 +244,12 @@
         - `_*`
             - hidden names: not imported by `from module import *`
             - protected class members (convention)
+        - `__*`
+            - implementation of "protected" methods in Python
         - `__*__`
             - [special method names](https://docs.python.org/3/reference/datamodel.html#specialnames)
-            - special variables (convention): `__author__`, `__copyright__`, `__license__`
+            - special module variables (convention):
+                `__author__`, `__copyright__`, `__license__`, `__version__`, etc.
 
         ---
 
@@ -259,6 +262,8 @@
             - Imaginary
         - See [Python documentation](https://docs.python.org/3/reference/lexical_analysis.html#literals)
 
+        **Note:** `True`, `False`, `None` – are **keywords**, although they are used like literals.
+
         ---
 
         # Operators
@@ -266,6 +271,8 @@
         - Arithmetic: `+` `-` `*` `**` `/` `//` `%` `@`
         - Bitwise: `<<` `>>` `&` `|` `^` `~`
         - Logical: `<` `>` `<=` `>=` `==` `!=`
+
+        **Note:** `and`, `or`, `not` – are **keywords**, although they act like logical operators.
 
         Python supports operators overloading.
 
@@ -286,7 +293,7 @@
         # Assignments
 
         - Continue to work on Assignments 1-A, 1-B
-        - Make your first commits and pushes
+        - Make your commits and pushes
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
