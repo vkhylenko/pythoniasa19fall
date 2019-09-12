@@ -7,7 +7,7 @@ For those who are already familiar with Python – write the best code you can t
 
 """
 last = ["That kept the cock that crow'd in the morn,",
-        "That waked the priest all shaven and shorn,",
+        "That waked the priests all shaven and shorn,",
         "That married the man all tatter'd and torn,",
         "That kissed the maiden all forlorn,",
         "That milk'd the cow with the crumpled horn,",
@@ -20,36 +20,35 @@ last = ["That kept the cock that crow'd in the morn,",
 
 k = -1
 
-def list():
-       global k
+def list(k):
        b = last[len(last)-k-1: len(last)]
        print('\n'.join(b))
-       k += 1
+       return k +1
 
 
 
 print("This is the house that Jack built.")
-list()
+k = list(k)
 print("This is the malt")
-list()
+k = list(k)
 print("\nThis is the rat,")
-list()
+k = list(k)
 print("\nThis is the cat,")
-list()
+k = list(k)
 print("\nThis is the dog,")
-list()
+k = list(k)
 print("\nThis is the cow with the crumpled horn,")
-list()
+k = list(k)
 print("\nThis is the maiden all forlorn")
-list()
+k = list(k)
 print("\nThis is the man all tatter'd and torn,")
-list()
+k = list(k)
 print("\nThis is the priest all shaven and shorn,")
-list()
+k = list(k)
 print("\nThis is the cock that crow'd in the morn, ")
-list()
+k = list(k)
 print("\nThis is the farmer sowing his corn, ")
-
+k = list(k)
 
 poem = '''
 This is the house that Jack built.
