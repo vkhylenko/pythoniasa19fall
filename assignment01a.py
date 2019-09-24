@@ -87,3 +87,8 @@ That lay in the house that Jack built.
 
 def poem():
     return ''
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
