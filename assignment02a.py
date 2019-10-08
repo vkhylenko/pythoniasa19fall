@@ -9,11 +9,11 @@ True
 
 
 def poem():
-    last = ["That kept the cock that crow'd in the morn,",
+    last = ["That kept the cock that crowed in the morn,",
             "That waked the priest all shaven and shorn,",
-            "That married the man all tatter'd and torn,",
+            "That married the man all tattered and torn,",
             "That kissed the maiden all forlorn,",
-            "That milk'd the cow with the crumpled horn,",
+            "That milked the cow with the crumpled horn,",
             "That tossed the dog,",
             "That worried the cat,",
             "That killed the rat,",
@@ -22,35 +22,42 @@ def poem():
 
     k = -1
 
-    def list():
-        global k
+    def verse(k, result):
         b = last[len(last) - k - 1: len(last)]
-        print('\n'.join(b))
-        k += 1
+        result += "\n".join(b)
+        return k + 1, result + "\n"
 
-    print("This is the house that Jack built.")
-    list()
-    print("This is the malt")
-    list()
-    print("\nThis is the rat,")
-    list()
-    print("\nThis is the cat,")
-    list()
-    print("\nThis is the dog,")
-    list()
-    print("\nThis is the cow with the crumpled horn,")
-    list()
-    print("\nThis is the maiden all forlorn")
-    list()
-    print("\nThis is the man all tatter'd and torn,")
-    list()
-    print("\nThis is the priest all shaven and shorn,")
-    list()
-    print("\nThis is the cock that crow'd in the morn, ")
-    list()
-    print("\nThis is the farmer sowing his corn, ")
+    def print_poem(k):
+        result = ""
+        result += "This is the house that Jack built.\n"
+        k,result = verse(k, result)
+        result += "This is the malt\n"
+        k,result = verse(k, result)
+        result += "\nThis is the rat,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the cat,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the dog,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the cow with the crumpled horn,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the maiden all forlorn,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the man all tattered and torn,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the priest all shaven and shorn,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the cock that crowed in the morn,\n"
+        k,result = verse(k, result)
+        result += "\nThis is the farmer sowing his corn,\n"
+        k,result = verse(k, result)
+
+        return result
+
+    return print_poem(k)
 
 
+poem()
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
