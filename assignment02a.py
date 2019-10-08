@@ -7,7 +7,6 @@ Wrap Assignment 1-A in function `poem()` that satisfies the doctest:
 True
 """
 
-
 def poem():
     last = ["That kept the cock that crowed in the morn,",
             "That waked the priest all shaven and shorn,",
