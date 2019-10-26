@@ -42,13 +42,13 @@ def task3(password):
     If the following passwords are given as input to the program: ABd1234@1,a F1#,2w3E*,2We3345
     Then, the output of the program should be:
 
-    >>> task3('ABd1234@1,a F1#,2w3E*,2We3345')
+    >>> task3('ABd1234@1')
     True
-    >>> task3('ABd1234@1,a F1#,2w3E*,2We3345')
+    >>> task3('a F1#')
     False
-    >>> task3('ABd1234@1,a F1#,2w3E*,2We3345')
+    >>> task3('2w3E*')
     False
-    >>> task3('ABd1234@1,a F1#,2w3E*,2We3345')
+    >>> task3('2We3345')
     False
     """
     # todo: write your code here
