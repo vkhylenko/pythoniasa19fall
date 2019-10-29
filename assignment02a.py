@@ -7,6 +7,7 @@ Wrap Assignment 1-A in function `poem()` that satisfies the doctest:
 True
 """
 
+
 def poem():
     last = ["That kept the cock that crowed in the morn,",
             "That waked the priest all shaven and shorn,",
@@ -51,12 +52,12 @@ def poem():
         result += "\nThis is the farmer sowing his corn,\n"
         k,result = verse(k, result)
 
+        result= result[:-1]
         return result
 
     return print_poem(k)
 
 
-poem()
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
